@@ -21,7 +21,7 @@
                         <div class="col" id="infosDiv">
                         </div>
                     </div>
-                    <p>Price: {{price}} TL</p>
+                    <p>Price: {{carData.price}} TL</p>
                      <div id="space">
                         
                         <b-button variant="primary lg"><router-link :to="{name: 'CarInfo', params: {carData}}" id="links">Rent</router-link></b-button>
@@ -47,7 +47,7 @@ export default {
   }, 
   props: {
     carData: Object
-  },
+  }
 }
 </script>
 
